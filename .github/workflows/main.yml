@@ -26,9 +26,7 @@ jobs:
       - name: Log in to Amazon ECR
         id: login-ecr
         uses: aws-actions/amazon-ecr-login@v2
-        with:
-          registry-type: public
-
+        
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
