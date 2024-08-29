@@ -33,7 +33,7 @@ jobs:
           node-version: '18'  # Adjust the Node.js version as required
 
       - name: Install dependencies
-        run: npm install
+        run: npm install --force
 
       - name: Build the application
         run: npm run build  # Modify or remove this if your app does not require a build step
