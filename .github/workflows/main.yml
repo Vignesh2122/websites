@@ -23,15 +23,15 @@ jobs:
 
     - name: Build the Docker image
       run: |
-        docker build -t my-static-website:latest .
+        docker build -t piraiwebsite .
 
     - name: Tag the image
       run: |
-        docker tag my-static-website:latest 471112905705.dkr.ecr.ap-south-1.amazonaws.com/my-static-website:latest
+        docker tag piraiwebsite:latest 471112905705.dkr.ecr.ap-south-1.amazonaws.com/piraiwebsite:latest
 
     - name: Push the Docker image to ECR
       run: |
-        docker push 471112905705.dkr.ecr.ap-south-1.amazonaws.com/my-static-website:latest
+        docker push 471112905705.dkr.ecr.ap-south-1.amazonaws.com/piraiwebsite:latest
 
     - name: Verify image pushed to ECR
       run: |
