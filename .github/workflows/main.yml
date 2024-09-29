@@ -27,11 +27,11 @@ jobs:
 
     - name: Tag the image
       run: |
-        docker tag my-static-website:latest $ECR_REPOSITORY_URI:latest
+        docker tag my-static-website:latest 471112905705.dkr.ecr.ap-south-1.amazonaws.com/my-static-website:latest
 
     - name: Push the Docker image to ECR
       run: |
-        docker push $ECR_REPOSITORY_URI:latest
+        docker push 471112905705.dkr.ecr.ap-south-1.amazonaws.com/my-static-website:latest
 
     - name: Verify image pushed to ECR
       run: |
