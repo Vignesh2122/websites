@@ -33,6 +33,4 @@ jobs:
       run: |
         docker push 471112905705.dkr.ecr.ap-south-1.amazonaws.com/piraiwebsite:latest
 
-    - name: Verify image pushed to ECR
-      run: |
-        echo "Docker image has been pushed to ECR: $ECR_REPOSITORY_URI:latest"
+    
